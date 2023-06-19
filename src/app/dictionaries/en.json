@@ -1,0 +1,18 @@
+{    
+    "about": {
+        "me": "Hello, my name is Felipe de Jesús. I am a young Mexican who is passionate about Web Development with more than 3 years of experience.",
+        "me2": "I enjoy creating web applications 🌐, designing databases ✍, page design 📓, software analysis 🔍.",
+        "me3": "Everything that has to do with the frontend and backend suits me perfectly since I'm fullstack 💻.",
+        "skillH1": "My skills",
+        "liNet": "3 years",
+        "liAsp": "3 years",
+        "liLaravel": "3 years",
+        "liReact": "1 year",
+        "liSqlServer": "1 year",
+        "liPostgres": "3 years",
+        "liGit": "3 years",
+        "liTailwind": "2 years",
+        "liBoots": "3 years",
+        "liMysql": "3 years"
+    }
+}
