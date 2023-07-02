@@ -1,4 +1,6 @@
-export default function IconMenuHamburger(props) {
+import { SVGAttributes } from "react";
+
+export default function IconChevronDown(props: SVGAttributes<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,7 +14,7 @@ export default function IconMenuHamburger(props) {
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
       />
     </svg>
   );

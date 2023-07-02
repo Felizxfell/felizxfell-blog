@@ -1,4 +1,6 @@
-export default function IconLanguage(props) {
+import { SVGAttributes } from "react";
+
+export default function IconLanguage(props: SVGAttributes<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -4,15 +4,17 @@ import Link from "next/link";
 import { Menu, Dialog, Transition } from "@headlessui/react";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, Fragment } from "react";
+import { getPathWithoutLang } from "@/lib/utils";
+import Image from "next/image";
+import { PropsLang, PropsPath, langs } from "@/types/types";
+
 import IconFoodpanda from "../icons/IconFoodpanda";
 import IconMenuHamburger from "../icons/IconMenuHamburger";
 import IconSearch from "../icons/IconSearch";
 import IconLanguage from "@/icons/IconLanguage";
-import { getPathWithoutLang } from "@/lib/utils";
 import IconFlagMexico from "@/icons/icon-flag-mexico.svg";
 import IconFlagUs from "@/icons/icon-flag-us.svg";
-import Image from "next/image";
-import { PropsLang, PropsPath, langs } from "@/types/types";
+import { MenuModal } from "./MenuModal";
 
 const links = {
   [langs.en]: [
@@ -56,6 +58,12 @@ const links = {
 export default function Navbar({ lang }: PropsLang) {
   const pathname = usePathname();
 
+  const [toggle, setToggle] = useState(false);
+
+  const handledToggle = () => {
+    setToggle(!toggle)
+  }
+
   return (
     <nav className="w-full">
       <div className="flex justify-between p-5 m-3 mt-7 lg:mx-32 xl:mx-64 2xl:mx-96 rounded-full bg-slate-700 shadow-lg shadow-slate-500/50 text-white">
@@ -65,7 +73,13 @@ export default function Navbar({ lang }: PropsLang) {
           </Link>
         </div>
         <div className="flex justify-center w-1/3 max-md:w-1/2 max-md:justify-end">
-          <IconMenuHamburger className="absolute mt-[-5px] w-8 h-8 hidden max-md:flex" />
+
+          <button onClick={handledToggle} className=" mt-[-5px] hidden max-md:flex">
+            <IconMenuHamburger className="w-8 h-8" />
+          </button>
+
+          {toggle && <MenuModal handledToggle={handledToggle} />}
+
           <ul className="flex gap-4 place-content-center max-md:hidden">
             {links[lang].map((link) => {
               link.href = link.href === "/" ? "" : link.href;
@@ -126,11 +140,10 @@ function Dropdown({ pathname }: PropsPath) {
               <Menu.Item>
                 {({ active }) => (
                   <button
-                    className={`${
-                      active
-                        ? "hover:bg-slate-300 text-white hover:text-emerald-600"
-                        : "text-slate-800"
-                    } group flex w-32 items-center rounded-md px-1 py-1 text-sm`}
+                    className={`${active
+                      ? "hover:bg-slate-300 text-white hover:text-emerald-600"
+                      : "text-slate-800"
+                      } group flex w-32 items-center rounded-md px-1 py-1 text-sm`}
                     onClick={() => {
                       router.push(`/es${getPathWithoutLang(pathname)}`);
                     }}
@@ -143,11 +156,10 @@ function Dropdown({ pathname }: PropsPath) {
               <Menu.Item>
                 {({ active }) => (
                   <button
-                    className={`${
-                      active
-                        ? "hover:bg-slate-300 text-white hover:text-emerald-600"
-                        : "text-slate-800"
-                    } group flex w-32 items-center rounded-md px-1 py-1 text-sm`}
+                    className={`${active
+                      ? "hover:bg-slate-300 text-white hover:text-emerald-600"
+                      : "text-slate-800"
+                      } group flex w-32 items-center rounded-md px-1 py-1 text-sm`}
                     onClick={() => {
                       router.push(`/en${getPathWithoutLang(pathname)}`);
                     }}

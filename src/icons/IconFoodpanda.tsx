@@ -1,4 +1,6 @@
-export default function IconFoodpanda(props) {
+import { SVGAttributes } from "react";
+
+export default function IconFoodpanda(props: SVGAttributes<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"

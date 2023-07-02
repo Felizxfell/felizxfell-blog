@@ -7,6 +7,9 @@ import { ParamsRootLayout } from "@/types/types";
 export const metadata = {
   title: "felizxfell",
   description: "Blog de prueba",
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 const googleFont = localFont({
@@ -20,8 +23,8 @@ export default function RootLayout(
   const { lang } = params;
 
   return (
-    <html lang={lang} className={`dark-custom ${googleFont.className}`}>
-      <body>
+    <html lang={lang} className={`dark-custom ${googleFont.className}`}>      
+      <body>        
         <Navbar lang={lang} />
         <Container>{children}</Container>
       </body>

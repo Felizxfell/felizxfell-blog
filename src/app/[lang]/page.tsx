@@ -7,7 +7,8 @@ import LinkedIn from "@/icons/LinkedIn.svg";
 import GitHub from "@/icons/GitHub.svg";
 import Link from "next/link";
 import { PropsHome } from "@/types/types";
-
+import facturador from './imgs/facturador.png'
+import dashboard from './imgs/dash-libellum.png'
 
 export default async function Home({ params }: PropsHome) {
   const { lang } = params;
@@ -16,7 +17,11 @@ export default async function Home({ params }: PropsHome) {
 
   return (
     <section className="mt-5 grid grid-cols-2 max-md:grid-cols-1">
-      <div className="max-md:w-full w-4/5 flex justify-center rounded-full mb-5 bg-gradient-to-bl from-blue-aqua from-20% to-green-pistache">
+      <div className="
+        w-4/5 flex justify-center rounded-full mb-5 
+        bg-gradient-to-bl from-blue-aqua from-20% to-green-pistache 
+        max-md:w-full max-md:col-span-2"
+      >
         <Cartoon />
       </div>
       <div className="grid content-center mb-5 md:pr-10 max-md:mt-8">
@@ -44,22 +49,25 @@ export default async function Home({ params }: PropsHome) {
           </li>
         </ul>
       </div>
-      <div className="text-center my-10 col-span-2 max-md:col-span-1">
+
+      <div className="text-center my-14 col-span-2 max:col-span-1">
         <Slider />
       </div>
 
-      <div className="mx-5 grid content-center">
-        <h2 className="text-center mb-7 max-md:mb-4 ">{dict.about.skillH1}</h2>
-        <div className="text-blue-sky max-md:mb-8">
+      <div className="mx-5 my-10 grid content-center max-md:col-span-2">
+        <h2 className="text-center mb-4 max-md:mb-4">
+          {dict.about.skillH2}
+        </h2>
+        <div className="max-md:mb-8 text-blue-aqua">
           <p>{dict.about.skills}</p>
         </div>
       </div>
-      <div className="md:px-16">
+      <div className="my-10 md:px-16 max-md:col-span-2">
         <ul
           className="my-5 list-none text-left grid gap-y-4
-                    [&>*]:rounded-md [&>*]:flex [&>*]:justify-between [&>*]:px-4 [&>*]:py-1
-                    [&>*:nth-child(odd)]:bg-slate-700 [&>*:nth-child(odd)]:text-blue-sky
-                    [&>*:nth-child(even)]:bg-blue-aqua [&>*:nth-child(even)]:text-black"
+                      [&>*]:rounded-md [&>*]:flex [&>*]:justify-between [&>*]:px-4 [&>*]:py-1
+                      [&>*:nth-child(odd)]:bg-slate-700 [&>*:nth-child(odd)]:text-blue-sky
+                      [&>*:nth-child(even)]:bg-blue-aqua [&>*:nth-child(even)]:text-black"
         >
           <li className="ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             <span>.Net Core</span>
@@ -102,6 +110,85 @@ export default async function Home({ params }: PropsHome) {
             <span>{dict.about.liMysql}</span>
           </li>
         </ul>
+      </div>
+
+      <div className="my-10 p-5 col-span-2">
+        <h2 className="text-center mt-8 mb-4">
+          {dict.about.projectsH2}
+        </h2>
+        <p className="mb-5 text-blue-aqua">
+          {dict.about.projects}
+        </p>
+        <div className="
+          grid gap-6 grid-cols-3 
+          [&>*]:p-5 [&>*]:rounded-md [&>*]:border-4 [&>*]:grid [&>*]:justify-items-center
+          [&>*:nth-child(even)]:border-emerald-400 [&>*:nth-child(odd)]:border-slate-700
+          [&>div>figure]:border-4 [&>div>figure]:rounded-md [&>div>figure]:border-blue-aqua
+          [&>div>figure]:flex [&>div>figure]:justify-center
+          [&>div>p]:mt-5 [&>div>p]:text-blue-sky
+          max-md:grid-cols-1
+        ">
+          <div className="ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+            <figure>
+              <Image src={facturador} alt="facturador" width={300} height={300} />
+            </figure>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae corporis distinctio atque cumque illum hic vitae libero quibusdam porro vel!
+              Voluptatibus veniam in quasi magnam! Laudantium dicta itaque blanditiis impedit!...
+            </p>
+          </div>
+          <div className="ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+            <figure>
+              <Image src={dashboard} alt="dashboard" width={300} height={300} />
+            </figure>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae corporis distinctio atque cumque illum hic vitae libero quibusdam porro vel!
+              Voluptatibus veniam in quasi magnam! Laudantium dicta itaque blanditiis impedit!...
+            </p>
+          </div>
+          <div className="ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+            <figure>
+
+            </figure>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae corporis distinctio atque cumque illum hic vitae libero quibusdam porro vel!
+              Voluptatibus veniam in quasi magnam! Laudantium dicta itaque blanditiis impedit!...
+            </p>
+          </div>
+          <div>
+            <figure>
+
+            </figure>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae corporis distinctio atque cumque illum hic vitae libero quibusdam porro vel!
+              Voluptatibus veniam in quasi magnam! Laudantium dicta itaque blanditiis impedit!...
+            </p>
+          </div>
+          <div>
+            <figure>
+
+            </figure>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae corporis distinctio atque cumque illum hic vitae libero quibusdam porro vel!
+              Voluptatibus veniam in quasi magnam! Laudantium dicta itaque blanditiis impedit!...
+            </p>
+          </div>
+          <div>
+            <figure>
+
+            </figure>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Molestiae corporis distinctio atque cumque illum hic vitae libero quibusdam porro vel!
+              Voluptatibus veniam in quasi magnam! Laudantium dicta itaque blanditiis impedit!...
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
