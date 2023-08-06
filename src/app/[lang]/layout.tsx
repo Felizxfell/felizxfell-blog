@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 const googleFont = localFont({
-  src: "../fonts/TiltNeon-Regular.woff2",
+  src: "../../assets/fonts/TiltNeon-Regular.woff2",
   display: "swap",
 });
 

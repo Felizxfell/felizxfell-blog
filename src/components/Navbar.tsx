@@ -6,7 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useState, Fragment } from "react";
 import { getPathWithoutLang } from "@/lib/utils";
 import Image from "next/image";
-import { PropsLang, PropsPath, langs } from "@/types/types";
+import { PropsLang, PropsPath } from "@/types/types";
 
 import IconFoodpanda from "../icons/IconFoodpanda";
 import IconMenuHamburger from "../icons/IconMenuHamburger";
@@ -15,45 +15,7 @@ import IconLanguage from "@/icons/IconLanguage";
 import IconFlagMexico from "@/icons/icon-flag-mexico.svg";
 import IconFlagUs from "@/icons/icon-flag-us.svg";
 import { MenuModal } from "./MenuModal";
-
-const links = {
-  [langs.en]: [
-    {
-      href: "/",
-      name: "About",
-    },
-    {
-      href: "/blog",
-      name: "Blog",
-    },
-    {
-      href: "/projects",
-      name: "Projects",
-    },
-    {
-      href: "/products",
-      name: "Products",
-    },
-  ],
-  [langs.es]: [
-    {
-      href: "/",
-      name: "Sobre",
-    },
-    {
-      href: "/blog",
-      name: "Blog",
-    },
-    {
-      href: "/projects",
-      name: "Proyectos",
-    },
-    {
-      href: "/products",
-      name: "Productos",
-    },
-  ],
-};
+import { links } from "@/constans";
 
 export default function Navbar({ lang }: PropsLang) {
   const pathname = usePathname();
@@ -65,53 +27,50 @@ export default function Navbar({ lang }: PropsLang) {
   }
 
   return (
-    <nav className="w-full">
-      <div className="flex justify-between p-5 m-3 mt-7 lg:mx-32 xl:mx-64 2xl:mx-96 rounded-full bg-slate-700 shadow-lg shadow-slate-500/50 text-white">
-        <div className="flex w-1/3 max-md:w-1/2">
-          <Link href="/" className="hover:text-emerald-400">
-            <IconFoodpanda />
-          </Link>
+    <>
+      {toggle && <MenuModal handledToggle={handledToggle} links={links[lang]} lang={lang} />}
+
+      <nav className={`w-full ${toggle && 'opacity-0'}`}>
+        <div className="flex justify-between p-5 m-3 mt-7 lg:mx-32 xl:mx-64 2xl:mx-96 rounded-full bg-slate-700 shadow-lg shadow-slate-500/50 text-white">
+          <div className="flex w-1/3 max-md:w-1/2">
+            <Link href="/" className="hover:text-emerald-400">
+              <IconFoodpanda />
+            </Link>
+          </div>
+          <div className="flex justify-center w-1/3 max-md:w-1/2 max-md:justify-end">
+
+            <button onClick={handledToggle} className="z-10 mt-[-5px] hidden max-md:flex">
+              <IconMenuHamburger className="w-8 h-8" />
+            </button>
+
+            <ul className="flex gap-4 place-content-center max-md:hidden">
+              {links[lang].map((link) => {
+                link.href = link.href === "/" ? "" : link.href;
+
+                const isActive = pathname.localeCompare(`/${lang}${link.href}`);
+
+                return (
+                  <li
+                    key={link.name}
+                    className={
+                      isActive
+                        ? `hover:text-emerald-400 hover:underline`
+                        : `text-emerald-400 underline`
+                    }
+                  >
+                    <Link href={`/${lang}${link.href}`}>{link.name}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div className="flex justify-end w-1/3 max-md:hidden">
+            <ModalSearch />           
+            <Dropdown pathname={pathname} />
+          </div>
         </div>
-        <div className="flex justify-center w-1/3 max-md:w-1/2 max-md:justify-end">
-
-          <button onClick={handledToggle} className=" mt-[-5px] hidden max-md:flex">
-            <IconMenuHamburger className="w-8 h-8" />
-          </button>
-
-          {toggle && <MenuModal handledToggle={handledToggle} />}
-
-          <ul className="flex gap-4 place-content-center max-md:hidden">
-            {links[lang].map((link) => {
-              link.href = link.href === "/" ? "" : link.href;
-
-              const isActive = pathname.localeCompare(`/${lang}${link.href}`);
-
-              return (
-                <li
-                  key={link.name}
-                  className={
-                    isActive
-                      ? `hover:text-emerald-400 hover:underline`
-                      : `text-emerald-400 underline`
-                  }
-                >
-                  <Link href={`/${lang}${link.href}`}>{link.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div className="flex justify-end w-1/3 max-md:hidden">
-          <ModalSearch />
-          {/* <input
-            type="search"
-            className="outline-none rounded-full p-2 bg-slate-600 hover:bg-slate-800"
-            placeholder="search..."
-          /> */}
-          <Dropdown pathname={pathname} />
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
 
