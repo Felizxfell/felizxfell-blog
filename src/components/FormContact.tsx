@@ -14,9 +14,9 @@ export default function FormContact() {
     const formData = new FormData(form)
 
     const name = formData.get("name") as string
-		const email = formData.get("email") as string
-		const description = formData.get("description") as string
-    console.log(name, email, description);
+    const email = formData.get("email") as string
+    const description = formData.get("description") as string
+    console.log({ name, email, description });
   }
 
   return (
@@ -46,7 +46,7 @@ export default function FormContact() {
           />
         </div>
         <div className="flex justify-center">
-          <button className="rounded-2xl w-32 p-3 bg-blue-aqua text-black hover:bg-blue-500" type="submit">
+          <button className="rounded-2xl w-32 p-3 bg-blue-aqua text-black hover:bg-blue-aqua-h" type="submit">
             Enviar
           </button>
         </div>

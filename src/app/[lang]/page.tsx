@@ -13,7 +13,7 @@ export default async function Home({ params }: PropsHome) {
   const dict = await getDictionary(lang);
 
   return (
-    <section className="mt-5 grid grid-cols-2 max-md:grid-cols-1">
+    <article className="mt-5 grid grid-cols-2 max-md:grid-cols-1">
       <MyInfo dict={dict} />
       
       <div className="text-center my-14 col-span-2">
@@ -25,6 +25,6 @@ export default async function Home({ params }: PropsHome) {
       <MyProjects dict={dict} />
       
       <FormContact />
-    </section>
+    </article>
   );
 }
