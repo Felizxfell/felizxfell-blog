@@ -2,7 +2,7 @@ import "../globals.css";
 import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import Container from "@/components/Container";
-import { ParamsRootLayout } from "@/types/types";
+import { ParamsRootLayout } from "@/types/types.p";
 
 export const metadata = {
   title: "felizxfell",

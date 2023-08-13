@@ -1,4 +1,4 @@
-import { langs } from "@/types/types";
+import { langs } from "@/types/types.p";
 
 /**
  * Regresa la ruta a la cual se quiere redirecionar para el cambio de idioma

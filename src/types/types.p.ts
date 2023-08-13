@@ -9,11 +9,11 @@ export interface PropsLang {
   lang: langs;
 }
 
-export interface PropsHome {
+export interface PropsDefault {
   params: PropsLang;
 }
 
-export interface ParamsRootLayout extends PropsHome {
+export interface ParamsRootLayout extends PropsDefault {
   children: ReactNode;
 }
 

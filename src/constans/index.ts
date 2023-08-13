@@ -1,4 +1,4 @@
-import { langs } from "@/types/types";
+import { langs } from "@/types/types.p";
 
 export const links = {
   [langs.en]: [

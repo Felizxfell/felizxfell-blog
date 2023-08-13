@@ -6,7 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { useState, Fragment } from "react";
 import { getPathWithoutLang } from "@/lib/utils";
 import Image from "next/image";
-import { PropsLang, PropsPath } from "@/types/types";
+import { PropsLang, PropsPath } from "@/types/types.p";
 
 import IconFoodpanda from "../icons/IconFoodpanda";
 import IconMenuHamburger from "../icons/IconMenuHamburger";
