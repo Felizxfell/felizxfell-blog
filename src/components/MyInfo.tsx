@@ -12,14 +12,14 @@ type Props = {
 export default function MeInfo({ dict }: Props) {
     return (
         <>
-            <div className="                
+            <section className="                
                 w-4/5 flex justify-center rounded-full mb-5 
                 bg-gradient-to-bl from-blue-aqua from-20% to-green-pistache 
                 max-md:w-full max-md:col-span-2"
             >
                 <Cartoon />
-            </div>
-            <div className="grid content-center mb-5 md:pr-10 max-md:mt-8">
+            </section>
+            <section className="grid content-center mb-5 md:pr-10 max-md:mt-8">
                 <p className="text-blue-sky">{dict.about.me}</p>
                 <p className="mt-4">{dict.about.me2}</p>
                 <p className="mt-4 text-blue-aqua">{dict.about.me3}</p>
@@ -43,7 +43,7 @@ export default function MeInfo({ dict }: Props) {
                         </Link>
                     </li>
                 </ul>
-            </div>
+            </section>
         </>
     )
 }

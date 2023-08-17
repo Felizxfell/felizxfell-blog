@@ -83,26 +83,28 @@ const sliders = [
 
 export default function Slider() {
   return (
-    <Splide
-      options={{
-        type: "loop",
-        drag: "free",
-        focus: "center",
-        perPage: 4,
-        autoplay: true,
-        lazyLoad: "sequential",        
-        wheel: true,
-        waitForTransition: false,        
-        speed: 2000,
-        interval: 1000,
-      }}
-      aria-label="my skills"
-    >
-      {sliders.map((s) => (
-        <SplideSlide key={s.alt}>
-          <Image src={s.src} alt={s.alt} />
-        </SplideSlide>
-      ))}
-    </Splide>
+    <div className="text-center my-14 col-span-2">
+      <Splide
+        options={{
+          type: "loop",
+          drag: "free",
+          focus: "center",
+          perPage: 4,
+          autoplay: true,
+          lazyLoad: "sequential",
+          wheel: true,
+          waitForTransition: false,
+          speed: 2000,
+          interval: 1000,
+        }}
+        aria-label="my skills"
+      >
+        {sliders.map((s) => (
+          <SplideSlide key={s.alt}>
+            <Image src={s.src} alt={s.alt} />
+          </SplideSlide>
+        ))}
+      </Splide>
+    </div>
   );
 }

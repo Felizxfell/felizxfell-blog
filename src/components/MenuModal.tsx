@@ -8,6 +8,7 @@ type propsMenuModal = {
     links: {
         href: string;
         name: string;
+        icon: (props?: React.SVGAttributes<SVGSVGElement>) => JSX.Element
     }[],
     lang: string
 }
@@ -16,7 +17,7 @@ export const MenuModal = ({ handledToggle, links, lang }: propsMenuModal) => {
     const pathname = usePathname();
 
     return (
-        <div 
+        <div
             className="rounded-lg p-6 fixed inset-x-3 top-7 z-20 transition duration-150 ease-in-out 
             bg-slate-700 shadow-lg shadow-slate-500/50 text-white"
         >
@@ -42,10 +43,12 @@ export const MenuModal = ({ handledToggle, links, lang }: propsMenuModal) => {
                                 className={
                                     isActive
                                         ? `hover:text-emerald-400 hover:underline`
-                                        : `text-emerald-400 underline`                                    
+                                        : `text-emerald-400 underline`
                                 }
                             >
-                                <Link href={`/${lang}${link.href}`}>{link.name}</Link>
+                                <Link href={`/${lang}${link.href}`} className="flex gap-4">
+                                    {link.icon()} {link.name}
+                                </Link>
                             </li>
                         );
                     })}

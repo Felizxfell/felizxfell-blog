@@ -15,15 +15,13 @@ export default async function Home({ params }: PropsDefault) {
   return (
     <article className="mt-5 grid grid-cols-2 max-md:grid-cols-1">
       <MyInfo dict={dict} />
-      
-      <div className="text-center my-14 col-span-2">
-        <Slider />
-      </div>
+
+      <Slider />
 
       <MySkills dict={dict} />
 
       <MyProjects dict={dict} />
-      
+
       <FormContact />
     </article>
   );

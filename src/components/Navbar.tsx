@@ -58,7 +58,9 @@ export default function Navbar({ lang }: PropsLang) {
                         : `text-emerald-400 underline`
                     }
                   >
-                    <Link href={`/${lang}${link.href}`}>{link.name}</Link>
+                    <Link href={`/${lang}${link.href}`} className="flex gap-1">
+                      {link.icon()} {link.name}
+                    </Link>
                   </li>
                 );
               })}
