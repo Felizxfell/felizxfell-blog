@@ -29,7 +29,7 @@ export default function Blog({ params }: Props) {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laborum dolorum distinctio voluptatem culpa unde ipsa doloribus debitis quaerat, dicta architecto minus ad saepe sequi illum. Porro praesentium dolor voluptas!
             </p>
             <Link className="text-white w-fit" href={`/${lang}/blog/09dd50f1-62b3-4ba1-a891-0546aac6f0ac`}>
-              {`Read article >`}
+              {`Read posts >`}
             </Link>
           </div>
         </section>
