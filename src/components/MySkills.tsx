@@ -7,14 +7,14 @@ export default function MySkills({ dict }: Props) {
     return (
         <>
             <section className="mx-5 my-10 grid content-center max-md:col-span-2">
-                <h2 className="text-center mb-4 max-md:mb-4">
+                <h2 className="font-extrabold text-3xl md:text-center mb-4 max-md:mb-4">
                     {dict.about.skillH2}
                 </h2>
                 <div className="max-md:mb-8 text-blue-aqua">
                     <p>{dict.about.skills}</p>
                 </div>
             </section>
-            <section className="mx-md:my-10 md:px-16 max-md:col-span-2">
+            <section className="md:my-10 md:px-16 max-md:col-span-2">
                 <ul className="my-5 list-none text-left grid gap-y-4
                       [&>*]:rounded-md [&>*]:flex [&>*]:justify-between [&>*]:px-4 [&>*]:py-1
                       [&>*:nth-child(odd)]:bg-slate-700 [&>*:nth-child(odd)]:text-blue-sky

@@ -8,7 +8,7 @@ type Props = {
 export default function TextArea({ id, placeholder, cols = 30, rows = 10 }: Props) {
   return (
     <textarea
-      className='outline-none rounded-lg px-4 p-2 border-2 border-blue-aqua bg-slate-700 hover:bg-slate-800 text-white'
+      className='outline-none rounded-lg px-4 p-2 bg-slate-700 hover:bg-slate-800 text-white'
       name={id}
       id={id}
       cols={cols}

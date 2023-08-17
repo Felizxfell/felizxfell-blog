@@ -31,7 +31,10 @@ export default function Navbar({ lang }: PropsLang) {
       {toggle && <MenuModal handledToggle={handledToggle} links={links[lang]} lang={lang} />}
 
       <nav className={`w-full ${toggle && 'opacity-0'}`}>
-        <div className="flex justify-between p-5 m-3 mt-7 lg:mx-32 xl:mx-64 2xl:mx-96 rounded-full bg-slate-700 shadow-lg shadow-slate-500/50 text-white">
+        <div className="flex justify-between p-5 m-2 mt-7
+          lg:mx-32 xl:mx-36 2xl:mx-96 rounded-full
+          bg-slate-700 shadow-lg shadow-slate-500/50 text-white"
+        >
           <div className="flex w-1/3 max-md:w-1/2">
             <Link href="/" className="hover:text-emerald-400">
               <IconFoodpanda />
@@ -67,7 +70,7 @@ export default function Navbar({ lang }: PropsLang) {
             </ul>
           </div>
           <div className="flex justify-end w-1/3 max-md:hidden">
-            <ModalSearch />           
+            <ModalSearch />
             <Dropdown pathname={pathname} />
           </div>
         </div>

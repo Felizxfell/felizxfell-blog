@@ -20,7 +20,7 @@ export default function FormContact() {
   }
 
   return (
-    <div className="col-span-2 md:px-14 mb-20">
+    <section className="col-span-2 md:px-14 mt-10 mb-20">
       <form onSubmit={handleSubmit} className='w-full p-9 pb-11 flex flex-col gap-5'>
         <div className="flex flex-col">
           <Label htmlFor='name' text="Name" />
@@ -42,7 +42,7 @@ export default function FormContact() {
           <Label htmlFor='description' text="Description" />
           <TextArea
             id="description"
-            placeholder="Hola quetal, me gustaria contactarte..."
+            placeholder="Hola que tal, me gustaria contactarte..."
           />
         </div>
         <div className="flex justify-center">
@@ -51,6 +51,6 @@ export default function FormContact() {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   )
 }

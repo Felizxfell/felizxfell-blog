@@ -6,6 +6,7 @@ import Slider from "@/components/Slider";
 import MySkills from "@/components/MySkills";
 import MyProjects from "@/components/MyProjects";
 import FormContact from "@/components/FormContact";
+import Experencie from "@/components/Experencie";
 
 export default async function Home({ params }: PropsDefault) {
   const { lang } = params;
@@ -19,6 +20,8 @@ export default async function Home({ params }: PropsDefault) {
       <Slider />
 
       <MySkills dict={dict} />
+
+      <Experencie dict={dict} />
 
       <MyProjects dict={dict} />
 

@@ -83,7 +83,7 @@ const sliders = [
 
 export default function Slider() {
   return (
-    <div className="text-center my-14 col-span-2">
+    <div className="text-center mt-20 mb-10 col-span-2">
       <Splide
         options={{
           type: "loop",
