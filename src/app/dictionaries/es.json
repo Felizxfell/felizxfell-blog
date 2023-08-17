@@ -3,7 +3,7 @@
         "me": "Hola mi nombre es Felipe de Jesús soy un joven mexicano que se apasiona por el Desarrollo Web con más de 3 años de experiencia.",
         "me2": "Disfruto creando aplicaciones web 🌐, diseñando bases de datos ✍, diseño de páginas 📓 y el análisis de software 🔍.",
         "me3": "Todo lo que tenga que ver con el frontend y backend me acomoda a la perfección ya que soy fullstack 💻.",
-        "skillH2": "Mis Habilidades",
+        "skillH2": "Habilidades",
         "skills": "Estas son algunas de mis habilidades en las que me he desarrollado, pero no significa que sea lo único que conozca o maneje, ya que me mantengo actualizando constantemente en el mundo de la tecnología y voy aprendiendo cosas nuevas y poniéndolas en practicando en proyectos personales.",
         "liNet": "3 años",
         "liAsp": "3 años",
@@ -15,7 +15,8 @@
         "liTailwind": "2 años",
         "liBoots": "3 años",
         "liMysql": "3 años",
-        "projectsH2": "Mis proyectos",
-        "projects": "Aquí hay algunos de los proyectos en los que he trabajado a lo largo de mi carrera profesional y de los que he podido recabar imágenes."
+        "projectsH2": "Proyectos",
+        "projects": "Aquí hay algunos de los proyectos en los que he trabajado a lo largo de mi carrera profesional.",
+        "expH2": "Experiencia"
     }
 }
