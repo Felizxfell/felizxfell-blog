@@ -20,7 +20,7 @@ export default function FormContact() {
   }
 
   return (
-    <section className="col-span-2 md:px-14 mt-10 mb-20">
+    <section className="col-span-2 md:px-14 mt-5 mb-10" aria-label="form-contact">
       <form onSubmit={handleSubmit} className='w-full p-9 pb-11 flex flex-col gap-5'>
         <div className="flex flex-col">
           <Label htmlFor='name' text="Name" />

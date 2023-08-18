@@ -23,7 +23,7 @@ export default function RootLayout(
   const { lang } = params;
 
   return (
-    <html lang={lang} className={`dark-custom ${googleFont.className}`}>      
+    <html lang={lang} className={`bg-shadow ${googleFont.className}`}>      
       <body>        
         <Navbar lang={lang} />
         <Container>{children}</Container>

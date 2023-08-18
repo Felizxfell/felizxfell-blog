@@ -16,10 +16,11 @@ export default function MeInfo({ dict }: Props) {
                 w-4/5 flex justify-center rounded-full mb-5 
                 bg-gradient-to-bl from-blue-aqua from-20% to-green-pistache 
                 max-md:w-full max-md:col-span-2"
+                aria-label="imagen-user"
             >
                 <Cartoon />
             </section>
-            <section className="grid content-center mb-5 md:pr-10 max-md:mt-8">
+            <section className="grid content-center mb-5 md:pr-10 max-md:mt-8" aria-label="me-info">
                 <p className="text-blue-sky">{dict.about.me}</p>
                 <p className="mt-4">{dict.about.me2}</p>
                 <p className="mt-4 text-blue-aqua">{dict.about.me3}</p>

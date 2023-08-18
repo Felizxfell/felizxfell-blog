@@ -83,7 +83,7 @@ const sliders = [
 
 export default function Slider() {
   return (
-    <div className="text-center mt-20 mb-10 col-span-2">
+    <div className="text-center my-5 col-span-2">
       <Splide
         options={{
           type: "loop",
@@ -101,7 +101,7 @@ export default function Slider() {
       >
         {sliders.map((s) => (
           <SplideSlide key={s.alt}>
-            <Image src={s.src} alt={s.alt} />
+            <Image src={s.src} alt={s.alt} priority />
           </SplideSlide>
         ))}
       </Splide>

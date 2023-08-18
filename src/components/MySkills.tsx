@@ -6,17 +6,19 @@ type Props = {
 export default function MySkills({ dict }: Props) {
     return (
         <>
-            <section className="mx-5 my-10 grid content-center max-md:col-span-2">
-                <h2 className="font-extrabold text-3xl md:text-center mb-4 max-md:mb-4">
+            <section className="mx-4 my-5 grid content-center max-md:col-span-2">
+                <h2 className="font-extrabold text-3xl max-md:text-center mb-5 max-md:mb-4">
                     {dict.about.skillH2}
                 </h2>
-                <div className="max-md:mb-8 text-blue-aqua">
-                    <p>{dict.about.skills}</p>
+                <div className="p-2 rounded-md text-blue-aqua bg-slate-700">
+                    <p className="p-4 rounded-2xl bg-shadow">
+                        {dict.about.skills}
+                    </p>
                 </div>
             </section>
-            <section className="md:my-10 md:px-16 max-md:col-span-2">
+            <section className="md:my-5 md:px-8 max-md:col-span-2">
                 <ul className="my-5 list-none text-left grid gap-y-4
-                      [&>*]:rounded-md [&>*]:flex [&>*]:justify-between [&>*]:px-4 [&>*]:py-1
+                      [&>*]:rounded-xl [&>*]:flex [&>*]:justify-between [&>*]:px-4 [&>*]:py-1
                       [&>*:nth-child(odd)]:bg-slate-700 [&>*:nth-child(odd)]:text-blue-sky
                       [&>*:nth-child(even)]:bg-blue-aqua [&>*:nth-child(even)]:text-black"
                 >

@@ -10,9 +10,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'shadow': '#1a1a1a',
         lemon: '#b2e243',
         'green-sheet': '#68d981',
-        'green-pistache': '#68d981',
+        'green-pistache': '#34d399',
         'blue-sky': '#37d1d9',
         'blue-aqua': '#4ba9fa',
         'blue-aqua-h': '#4ba8fac4',

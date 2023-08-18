@@ -8,7 +8,7 @@ import MyProjects from "@/components/MyProjects";
 import FormContact from "@/components/FormContact";
 import Experencie from "@/components/Experencie";
 
-export default async function Home({ params }: PropsDefault) {
+export default async function About({ params }: PropsDefault) {
   const { lang } = params;
 
   const dict = await getDictionary(lang);
