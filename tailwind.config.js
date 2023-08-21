@@ -16,7 +16,6 @@ module.exports = {
         'green-pistache': '#34d399',
         'blue-sky': '#37d1d9',
         'blue-aqua': '#4ba9fa',
-        'blue-aqua-h': '#4ba8fac4',
       },
       backgroundImage: {
       },

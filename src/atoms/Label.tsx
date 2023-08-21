@@ -6,6 +6,6 @@ type Props = {
 
 export default function Label({ htmlFor, text }: Props) {
   return (
-    <label className='pl-3 mb-1' htmlFor={htmlFor}>{text}</label>
+    <label className='pl-3 mb-1 hover:text-slate-100' htmlFor={htmlFor}>{text}</label>
   )
 }

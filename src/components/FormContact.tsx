@@ -1,5 +1,6 @@
 'use client'
 
+import Button from "@/atoms/Button";
 import Inpunt from "@/atoms/Inpunt";
 import Label from "@/atoms/Label";
 import TextArea from "@/atoms/TextArea";
@@ -21,36 +22,36 @@ export default function FormContact() {
 
   return (
     <section className="col-span-2 md:px-14 mt-5 mb-10" aria-label="form-contact">
-      <form onSubmit={handleSubmit} className='w-full p-9 pb-11 flex flex-col gap-5'>
-        <div className="flex flex-col">
-          <Label htmlFor='name' text="Name" />
-          <Inpunt
-            type="text"
-            id="name"
-            placeholder="Jesús"
-          />
-        </div>
-        <div className="flex flex-col">
-          <Label htmlFor='email' text="Email" />
-          <Inpunt
-            type="email"
-            id="email"
-            placeholder="jesus@email.com"
-          />
-        </div>
-        <div className="flex flex-col">
-          <Label htmlFor='description' text="Description" />
-          <TextArea
-            id="description"
-            placeholder="Hola que tal, me gustaria contactarte..."
-          />
-        </div>
-        <div className="flex justify-center">
-          <button className="rounded-2xl w-32 p-3 bg-blue-aqua text-black hover:bg-blue-aqua-h" type="submit">
-            Enviar
-          </button>
-        </div>
-      </form>
+      <div className="p-2 rounded-md bg-slate-700">
+        <form onSubmit={handleSubmit} className='rounded-2xl bg-shadow w-full p-9 pb-11 flex flex-col gap-5'>
+          <div className="flex flex-col">
+            <Label htmlFor='name' text="Name" />
+            <Inpunt
+              type="text"
+              id="name"
+              placeholder="Jesús"
+            />
+          </div>
+          <div className="flex flex-col">
+            <Label htmlFor='email' text="Email" />
+            <Inpunt
+              type="email"
+              id="email"
+              placeholder="jesus@email.com"
+            />
+          </div>
+          <div className="flex flex-col">
+            <Label htmlFor='description' text="Description" />
+            <TextArea
+              id="description"
+              placeholder="Hola que tal, me gustaria contactarte..."
+            />
+          </div>
+          <div className="flex justify-center">
+            <Button text="Enviar" />
+          </div>
+        </form>
+      </div>
     </section>
   )
 }

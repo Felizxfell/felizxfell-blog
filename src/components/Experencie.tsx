@@ -26,16 +26,22 @@ export default function Experencie({ dict }: Props) {
           </picture>
           <ul className="bg-slate-800 grid gap-4 text-sm leading-5 [&>*:nth-child(even)]:text-emerald-400">
             <li>
-              Realice el mantenimiento del sistema de facturación electrónica Libellum. Hice la actualización a la versión CFDI 4.0 en ASP Net y Net Framework. Creó integraciones con terceros para consumo de servicios de facturación a través de servicios Web SOAP y API usando
+              Realice el mantenimiento del sistema de facturación electrónica Libellum. Hice la actualización a la versión CFDI 4.0 en ASP Net y Net Framework con consumo de servicios de facturación a través de servicios Web SOAP y API.
             </li>
             <li>
-              Cree el Micro Servicio que automatiza los procesos de facturas globales usando .Net Core. Se consumen los Web Services que detonan el proceso. Se optimizó la subida de datos a la mitad de tiempo.
+              Cree el Micro Servicio que automatiza los procesos de facturas globales usando .Net Core consumiendo los Web Services. Se optimizó la subida de datos a la mitad de tiempo.
             </li>
             <li>
-              Mantenimiento a la Base de Datos con Mysql usando Stored Procedures, Views y Subconsultas avanzadas, más el uso de Linq en .net.
+              Mantenimiento a la Base de Datos con Mysql usando Stored Procedures, Views, Funciones y  Subconsultas avanzadas.
             </li>
             <li>
               Análisis y diseño de base de datos con Postgresql y diseño de software para Libellum suite usando Laravel con React js y Tailwindcss para el diseño.
+            </li>
+            <li>
+              Creé la aplicación web Libellum Dashboard el cual muestra todas las sucursales de una franquicia que monitorea las facturas realizadas durante cierto tiempo y las pinta dependiendo si se hicieron o no facturas.
+            </li>
+            <li>
+              Contribuí en el backend y frontend de una aplicación web para un restaurante en el cual se realizan los pedidos de productos, envío de mensajes, orden de compra, y pago de productos.
             </li>
           </ul>
         </div>
