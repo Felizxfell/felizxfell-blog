@@ -20,3 +20,8 @@ export interface ParamsRootLayout extends PropsDefault {
 export type PropsPath = {
   pathname: string;
 };
+
+export enum ThemeQuill {
+  snow = "snow",
+  bubble = "bubble",
+}

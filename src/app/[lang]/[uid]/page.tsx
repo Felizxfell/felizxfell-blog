@@ -1,7 +1,8 @@
+import Quill from "@/lib/Editor"
 
 type Props = {
   params: {
-    uid: string
+    uid?: string
     lang: string
   }
 }
@@ -17,7 +18,11 @@ export default function Posts({ params }: Props) {
 
       <p className="my-10 text-blue-aqua">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt beatae vel sit. Ad, debitis. Aperiam accusamus voluptatibus expedita provident magnam molestiae mollitia unde exercitationem laboriosam quae. Illum sapiente beatae maiores?</p>
       
-      <strong>Un titulo al azar</strong>
+      <strong className="mb-4">Un titulo al azar</strong>
+      
+      <section className="bg-white text-black">
+        <Quill />
+      </section>
     </article>
   )
 }
