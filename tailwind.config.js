@@ -17,6 +17,13 @@ module.exports = {
         'blue-sky': '#37d1d9',
         'blue-aqua': '#4ba9fa',
       },
+      typography: (theme) => {
+        DEFAULT: {
+          css: {
+            color: theme('extend.colors.blue-sky')
+          }
+        }
+      },
       backgroundImage: {
       },
     },
@@ -24,5 +31,7 @@ module.exports = {
       padding: '1.2rem',
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

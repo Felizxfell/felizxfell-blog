@@ -2,6 +2,7 @@ import Cartoon from "@/components/Cartoon/Cartoon";
 import Twitter from "@/icons/Twitter.svg";
 import LinkedIn from "@/icons/LinkedIn.svg";
 import GitHub from "@/icons/GitHub.svg";
+import Email from "@/icons/IconEmail.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -42,6 +43,11 @@ export default function MeInfo({ dict }: Props) {
                     <li>
                         <Link href="https://github.com/Felizxfell" target="blank">
                             <Image src={GitHub} alt="GitHub" width={26} />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="mailto:felizxhgf@gmail.com" target="blank">
+                            <Image src={Email} alt="Email" width={26} />
                         </Link>
                     </li>
                 </ul>
