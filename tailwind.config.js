@@ -20,7 +20,7 @@ module.exports = {
       typography: (theme) => {
         DEFAULT: {
           css: {
-            color: theme('extend.colors.blue-sky')
+            color: theme('colors.blue-sky')
           }
         }
       },

@@ -1,5 +1,3 @@
-import kachimushi from '@/assets/imgs/about/logo_kachimushi.png'
-import GupoSalinas from '@/assets/imgs/about/LogoGS-main.svg'
 import Image from 'next/image'
 
 type Props = {
@@ -22,7 +20,7 @@ export default function Experencie({ dict }: Props) {
             Kachimuchi, 02-2020 - 01-2023
           </p>
           <picture className='flex justify-center'>
-            <Image src={kachimushi} alt="kachimushi" className='p-2 rounded-lg bg-white' />
+            <Image src="/imgs/logo_kachimushi.png" width={200} height={200} alt="kachimushi" className='p-2 rounded-lg bg-white' />
           </picture>
           <ul className="grid gap-4 text-sm leading-5 bg-slate-800 [&>*:nth-child(even)]:text-emerald-400">
             <li>
@@ -50,7 +48,7 @@ export default function Experencie({ dict }: Props) {
             Grupo Salinas, 02-2023 - Actualidad
           </p>
           <picture className='flex justify-center'>
-            <Image src={GupoSalinas} alt="GupoSalinas" className='p-2 rounded-lg bg-white' width={165} />
+            <Image src="/imgs/LogoGS.svg" alt="GupoSalinas" className='p-2 rounded-lg bg-white' width={166} height={166} />
           </picture>
           <ul className="grid gap-4 text-sm leading-5 bg-slate-800 [&>*:nth-child(even)]:text-emerald-400">
             <li>
