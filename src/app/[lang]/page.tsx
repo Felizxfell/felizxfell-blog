@@ -7,7 +7,7 @@ import MySkills from "@/components/MySkills";
 import MyProjects from "@/components/MyProjects";
 import Experencie from "@/components/Experencie";
 
-export default async function About({ params }: PropsDefault) {
+export default async function AboutPage({ params }: PropsDefault) {
   const { lang } = params;
 
   const dict = await getDictionary(lang);

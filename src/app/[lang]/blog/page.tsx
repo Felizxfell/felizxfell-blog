@@ -6,8 +6,9 @@ type Props = {
   }
 }
 
-export default function Blog({ params }: Props) {
+export default function BlogPage({ params }: Props) {
   const { lang } = params
+  
   return (
     <article className="grid grid-rows-1 md:px-12">
       <div className="my-8 divide-x-[1px] divide-slate-500">
@@ -28,7 +29,7 @@ export default function Blog({ params }: Props) {
             <p className="text-blue-sky mb-5">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda laborum dolorum distinctio voluptatem culpa unde ipsa doloribus debitis quaerat, dicta architecto minus ad saepe sequi illum. Porro praesentium dolor voluptas!
             </p>
-            <Link className="text-white w-fit" href={`/${lang}/09dd50f1-62b3-4ba1-a891-0546aac6f0ac`}>
+            <Link className="text-white w-fit" href={`/${lang}/blog/09dd50f1-62b3-4ba1-a891-0546aac6f0ac`}>
               {`Read posts >`}
             </Link>
           </div>

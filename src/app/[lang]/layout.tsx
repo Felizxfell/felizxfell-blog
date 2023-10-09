@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import Container from "@/components/Container";
 import { ParamsRootLayout } from "@/types/types.p";
+import ScrollTop from "@/components/ScrollTop";
 
 export const metadata = {
   title: "felizxfell",
@@ -23,10 +24,11 @@ export default function RootLayout(
   const { lang } = params;
 
   return (
-    <html lang={lang} className={`bg-shadow ${googleFont.className}`}>      
+    <html lang={lang} className={`bg-shadow ${googleFont.className} scroll-smooth`} id="html">
       <body>        
         <Navbar lang={lang} />
         <Container>{children}</Container>
+        <ScrollTop />
       </body>
     </html>
   );

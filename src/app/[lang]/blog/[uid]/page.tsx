@@ -7,7 +7,7 @@ type Props = {
   }
 }
 
-export default async function Posts({ params }: Props) {
+export default async function PostsPage({ params }: Props) {
   const { uid, lang } = params
   return (
     <article className='flex justify-center'>
