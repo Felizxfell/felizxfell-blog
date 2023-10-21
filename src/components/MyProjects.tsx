@@ -28,9 +28,10 @@ export default function MyProjects({ dict }: Props) {
                         <Image src={facturador} alt="facturador" width={300} height={150} />
                     </picture>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Molestiae corporis distinctio atque cumque illum hic vitae libero quibusdam porro vel!
-                        Voluptatibus veniam in quasi magnam! Laudantium dicta itaque blanditiis impedit!...
+                    Realice la actualización de todo el sistema de Libellum CFDI a la nueva versión de timbrado del SAT 4.0.
+                    Implemente todas las nuevas reglas y estuve a cargo del mantenimiento del mismo solventando cualquier tipo de bug o
+                    fallo y realizando implementación de servicios externos.
+
                     </p>
                 </div>
                 <div className="ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300">
@@ -38,21 +39,10 @@ export default function MyProjects({ dict }: Props) {
                         <Image src={dashboard} alt="dashboard" width={300} height={150} />
                     </picture>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Molestiae corporis distinctio atque cumque illum hic vitae libero quibusdam porro vel!
-                        Voluptatibus veniam in quasi magnam! Laudantium dicta itaque blanditiis impedit!...
+                    Desarrolle el proyecto Libellum Dashboard el cual muestra toda la actividad de facturación y venta de todas las sucursales de una franquicia.
+                    Identifica por colores de un semáforo el flujo de trabajo de una sucursal y detecta anomalías.
                     </p>
-                </div>
-                <div className="ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300">
-                    <picture>
-
-                    </picture>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Molestiae corporis distinctio atque cumque illum hic vitae libero quibusdam porro vel!
-                        Voluptatibus veniam in quasi magnam! Laudantium dicta itaque blanditiis impedit!...
-                    </p>
-                </div>
+                </div>                
             </div>
         </section>
     )

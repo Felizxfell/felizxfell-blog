@@ -4,12 +4,13 @@ enum TypesButton {
     reset = 'reset'
 }
 
-type Props = {
-    text: string
+type Props = {    
+    children?: React.ReactNode
     type?: TypesButton
+    method?: () => void
 }
 
-export default function Button({ text, type = TypesButton.submit }: Props) {
+export default function Button({ children, type = TypesButton.submit, method }: Props) {
     return (
         <button
             className="
@@ -18,8 +19,9 @@ export default function Button({ text, type = TypesButton.submit }: Props) {
                 hover:bg-emerald-600 hover:text-slate-100 hover:outline-slate-100 hover:outline-2
             "
             type={type}
+            onClick={method}
         >
-            {text}
+            {children}
         </button>
     )
 }

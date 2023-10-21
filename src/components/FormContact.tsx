@@ -21,9 +21,9 @@ export default function FormContact() {
   }
 
   return (
-    <section className="col-span-2 md:px-14 mt-5 mb-10" aria-label="form-contact">
+    <section className="col-span-2 md:px-14 mt-5 mb-10">
       <div className="p-2 rounded-md bg-slate-700">
-        <form onSubmit={handleSubmit} className='rounded-2xl bg-shadow w-full p-9 pb-11 flex flex-col gap-5'>
+        <form onSubmit={handleSubmit} className='rounded-2xl bg-shadow w-full p-9 pb-11 flex flex-col gap-5' aria-label="form-contact">
           <div className="flex flex-col">
             <Label htmlFor='name' text="Name" />
             <Inpunt
@@ -48,7 +48,9 @@ export default function FormContact() {
             />
           </div>
           <div className="flex justify-center">
-            <Button text="Enviar" />
+            <Button>
+              Enviar
+            </Button>
           </div>
         </form>
       </div>

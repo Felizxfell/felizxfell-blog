@@ -16,6 +16,7 @@ import IconFlagMexico from "@/icons/icon-flag-mexico.svg";
 import IconFlagUs from "@/icons/icon-flag-us.svg";
 import { MenuModal } from "./MenuModal";
 import { links } from "@/constans";
+import { useStore } from "@/store";
 
 export default function Navbar({ lang }: PropsLang) {
   const pathname = usePathname();
@@ -26,11 +27,15 @@ export default function Navbar({ lang }: PropsLang) {
     setToggle(!toggle)
   }
 
+  const visible = useStore((state) => state.visible);
+
+  if (!visible) return <></>
+
   return (
     <>
       {toggle && <MenuModal handledToggle={handledToggle} links={links[lang]} lang={lang} />}
 
-      <nav className={`w-full ${toggle && 'opacity-0'}`}>
+      <nav className={`w-full ${toggle && 'opacity-0'}  `}>
         <div className="flex justify-between p-5 m-2 mt-7
           lg:mx-32 xl:mx-36 2xl:mx-96 rounded-full
           bg-slate-700 shadow-lg shadow-slate-500/50 text-white"
@@ -194,7 +199,7 @@ function ModalSearch() {
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
                   >
-                    Payment successful
+                    Menu
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
