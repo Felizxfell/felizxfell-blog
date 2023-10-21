@@ -15,8 +15,23 @@
         "liTailwind": "2 años",
         "liBoots": "3 años",
         "liMysql": "3 años",
+        "expH2": "Experiencia",
+        "expworkt1": " Kachimuchi, 02-2020 - 01-2023",
+        "lik1": "Realice el mantenimiento del sistema de facturación electrónica Libellum. Hice la actualización a la versión CFDI 4.0 en ASP Net y Net Framework con consumo de servicios de facturación a través de servicios Web SOAP y API.",
+        "lik2": "Cree el Micro Servicio que automatiza los procesos de facturas globales usando .Net Core consumiendo los Web Services. Se optimizó la subida de datos a la mitad de tiempo.",
+        "lik3": "Mantenimiento a la Base de Datos con Mysql usando Stored Procedures, Views, Funciones y  Subconsultas avanzadas.",
+        "lik4": "Análisis y diseño de base de datos con Postgresql y diseño de software para Libellum suite usando Laravel con React js y Tailwindcss para el diseño.",
+        "lik5": "Creé la aplicación web Libellum Dashboard el cual muestra todas las sucursales de una franquicia que monitorea las facturas realizadas durante cierto tiempo y las pinta dependiendo si se hicieron o no facturas.",
+        "lik6": "Contribuí en el backend y frontend de una aplicación web para un restaurante en el cual se realizan los pedidos de productos, envío de mensajes, orden de compra, y pago de productos.",
+        "expworkt2": "Grupo Salinas, 02-2023 - Actualidad",
+        "ligs1": "Mantenimiento del sistema ADA de auditoría utilizando SQL Server. y .Net Framework, actualizando módulos y refactorizando el frontend.",
+        "ligs2": "Creación de servicios API con .Net Framework consumiendo servicios externos para la separación de inventarios donde se mejoró el proceso de consulta de datos.",
+        "ligs3": "Optimización de Store Procedure con SQL Server mejorando procesos de recolección de datos usando Funciones, Vistas, Cursores, Subconsultas, unión de tablas entre otros.",
+        "ligs4": "Certificación de aplicaciones web construidas en .Net donde se resolvían todas las vulnerabilidades (altas, medias y bajas), se actualizan módulos y librerías para la seguridad de la aplicación y su lanzamiento a producción.",
+        "ligs5": "Configuración de IIS para entornos de desarrollo y pruebas para subir sitios en Windows Server preconfigurados y pruebas de los proyectos publicados.",
         "projectsH2": "Proyectos",
         "projects": "Aquí hay algunos de los proyectos en los que he trabajado a lo largo de mi carrera profesional.",
-        "expH2": "Experiencia"
+        "projectLibellum": "Realice la actualización de todo el sistema de Libellum CFDI a la nueva versión de timbrado del SAT 4.0. Implemente todas las nuevas reglas y estuve a cargo del mantenimiento del mismo solventando cualquier tipo de bug o fallo y realizando implementación de servicios externos.",
+        "projectDash": "Desarrolle el proyecto Libellum Dashboard el cual muestra toda la actividad de facturación y venta de todas las sucursales de una franquicia. Identifica por colores de un semáforo el flujo de trabajo de una sucursal y detecta anomalías."
     }
 }

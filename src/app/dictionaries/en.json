@@ -15,8 +15,23 @@
         "liTailwind": "2 years",
         "liBoots": "3 years",
         "liMysql": "3 years",
+        "expH2": "Experience",
+        "expworkt1": " Kachimuchi, 02-2020 - 01-2023",
+        "lik1": "Perform maintenance on the Libellum electronic billing system. Updated to CFDI 4.0 version in ASP Net and Net Framework with consumption of billing services through SOAP Web services and API.",
+        "lik2": "Create the MicroService that automates global billing processes using .Net Core consuming Web Services. Data loading was optimized in half the time.",
+        "lik3": "Database Maintenance with Mysql using Stored Procedures, Views, Functions and advanced subqueries.",
+        "lik4": "Database analysis and design with Postgresql and software design for the Libellum suite using Laravel with React js and Tailwindcss for the design.",
+        "lik5": "I created the Libellum Dashboard web application that shows all the branches of a franchise, monitors the invoices made during a given time and paints them depending on whether they were made or not.",
+        "lik6": "I contributed with the backend and frontend of a web application for a restaurant in which product orders, message sending, purchase orders and product payments are made.",
+        "expworkt2": "Grupo Salinas, 02-2023 - Currently",
+        "ligs1": "Maintenance of the ADA audit system using SQL Server. and .Net Framework, updating modules and refactoring the frontend.",
+        "ligs2": "Creation of API services with .Net Framework consuming external services for inventory separation where the data query process was improved.",
+        "ligs3": "Optimization of Storage Procedures with SQL Server, improving data collection processes using Functions, Views, Cursors, Subqueries, table unions, among others.",
+        "ligs4": "Certification of web applications built in .Net where all vulnerabilities were resolved (high, medium and low), modules and libraries were updated for the security of the application and its release to production.",
+        "ligs5": "Configuring IIS for development and test environments to load pre-configured Windows Server sites and test published projects.",
         "projectsH2": "Projects",
         "projects": "Here are some of the projects that I have worked on throughout my professional.",
-        "expH2": "Experience"
+        "projectLibellum": "Update the entire Libellum CFDI system to the new SAT 4.0 ringing version. I implemented all the new rules and was in charge of its maintenance, solving any type of bug or failure and implementing external services.",
+        "projectDash": "Developed the Libellum Dashboard project which shows all the billing and sales activity of all the branches of a franchise. Identify the workflow of a branch by traffic light colors and detect anomalies."
     }
 }

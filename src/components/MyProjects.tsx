@@ -28,10 +28,7 @@ export default function MyProjects({ dict }: Props) {
                         <Image src={facturador} alt="facturador" width={300} height={150} />
                     </picture>
                     <p>
-                    Realice la actualización de todo el sistema de Libellum CFDI a la nueva versión de timbrado del SAT 4.0.
-                    Implemente todas las nuevas reglas y estuve a cargo del mantenimiento del mismo solventando cualquier tipo de bug o
-                    fallo y realizando implementación de servicios externos.
-
+                        {dict.about.projectLibellum}
                     </p>
                 </div>
                 <div className="ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300">
@@ -39,8 +36,7 @@ export default function MyProjects({ dict }: Props) {
                         <Image src={dashboard} alt="dashboard" width={300} height={150} />
                     </picture>
                     <p>
-                    Desarrolle el proyecto Libellum Dashboard el cual muestra toda la actividad de facturación y venta de todas las sucursales de una franquicia.
-                    Identifica por colores de un semáforo el flujo de trabajo de una sucursal y detecta anomalías.
+                        {dict.about.projectDash}
                     </p>
                 </div>                
             </div>
