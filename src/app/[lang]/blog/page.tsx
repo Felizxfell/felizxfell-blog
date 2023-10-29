@@ -3,6 +3,7 @@ import ChevronRigth from "@/icons/ChevronRigth";
 import BlogsJson from '@/blogs/mocks/blogs.json'
 import Link from "next/link";
 import type { Blogs } from "@/types/types";
+import { Helper } from "@/lib/utils";
 
 type Props = {
   params: {
@@ -30,7 +31,7 @@ export default async function BlogPage({ params }: Props) {
             </div>
             <div className="max-md:ml-3 ml-10 p-5 grid gap-2 mb-5 rounded-lg hover:bg-zinc-800">
               <strong className="text-blue-aqua">
-                {blog.title}
+                {Helper.Capitalize(blog.title)}
               </strong>
               <p className="text-blue-sky mb-5">
                 {blog.description}

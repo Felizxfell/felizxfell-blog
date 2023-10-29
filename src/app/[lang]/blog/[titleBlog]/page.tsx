@@ -16,9 +16,9 @@ export default async function PostsPage({ params }: Props) {
   const DynamicBlog = dynamic(() => import(`@/blogs/${titleBlog}.mdx`), {
     loading: () => <p>Loading...</p>,
   })
-  
+
   return (
-    <article className='flex justify-center'>
+    <article className='flex justify-center' role='blogs' aria-label='list of blogs'>
       <ChangeStore show={false} />
       <section
         className='prose prose-zinc text-blue-sky w-full
@@ -31,8 +31,8 @@ export default async function PostsPage({ params }: Props) {
           prose-a:text-slate-200
           prose-em:text-emerald-400'
       >
-        <Link 
-          className="text-white w-fit flex no-underline hover:text-emerald-400" 
+        <Link
+          className="text-white w-fit flex no-underline hover:text-emerald-400"
           href={`/${lang}/blog`}
         >
           <span className='mt-[3px]'> <ChevronLeft /> </span> Back To Posts

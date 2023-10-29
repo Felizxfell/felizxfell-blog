@@ -21,11 +21,11 @@ export const links = {
       name: "Projects",
       icon: IconFoco,
     },
-    {
-      href: "/products",
-      name: "Products",
-      icon: IconCursor,
-    },
+    // {
+    //   href: "/products",
+    //   name: "Products",
+    //   icon: IconCursor,
+    // },
   ],
   [langs.es]: [
     {
@@ -43,10 +43,10 @@ export const links = {
       name: "Proyectos",
       icon: IconFoco,
     },
-    {
-      href: "/products",
-      name: "Productos",
-      icon: IconCursor,
-    },
+    // {
+    //   href: "/products",
+    //   name: "Productos",
+    //   icon: IconCursor,
+    // },
   ],
 };

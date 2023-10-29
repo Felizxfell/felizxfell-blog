@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Menu, Dialog, Transition } from "@headlessui/react";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, Fragment } from "react";
-import { getPathWithoutLang } from "@/lib/utils";
 import Image from "next/image";
 import { PropsLang, PropsPath } from "@/types/types.p";
 
@@ -17,6 +16,7 @@ import IconFlagUs from "@/icons/icon-flag-us.svg";
 import { MenuModal } from "./MenuModal";
 import { links } from "@/constans";
 import { useStore } from "@/store";
+import { Helper } from "@/lib/utils";
 
 export default function Navbar({ lang }: PropsLang) {
   const pathname = usePathname();
@@ -114,7 +114,7 @@ function Dropdown({ pathname }: PropsPath) {
                       : "text-slate-800"
                       } group flex w-32 items-center rounded-md px-1 py-1 text-sm`}
                     onClick={() => {
-                      router.push(`/es${getPathWithoutLang(pathname)}`);
+                      router.push(`/es${Helper.getPathWithoutLang(pathname)}`);
                     }}
                   >
                     <span className="mr-3">Español</span>
@@ -130,7 +130,7 @@ function Dropdown({ pathname }: PropsPath) {
                       : "text-slate-800"
                       } group flex w-32 items-center rounded-md px-1 py-1 text-sm`}
                     onClick={() => {
-                      router.push(`/en${getPathWithoutLang(pathname)}`);
+                      router.push(`/en${Helper.getPathWithoutLang(pathname)}`);
                     }}
                   >
                     <span className="mr-4">English</span>
