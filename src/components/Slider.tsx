@@ -101,7 +101,7 @@ export default function Slider() {
       >
         {sliders.map((s) => (
           <SplideSlide key={s.alt}>
-            <Image src={s.src} alt={s.alt} priority />
+            <Image src={s.src} alt={s.alt} />
           </SplideSlide>
         ))}
       </Splide>

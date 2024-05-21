@@ -9,29 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "1.7.17",
+    "@headlessui/react": "1.7.18",
     "@splidejs/react-splide": "0.7.12",
-    "@types/node": "20.8.10",
-    "@types/react": "18.2.34",
-    "@types/react-dom": "18.2.14",
-    "autoprefixer": "10.4.16",
+    "@types/node": "20.11.5",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "autoprefixer": "10.4.17",
     "cmdk": "0.2.0",
-    "eslint": "8.52.0",
-    "eslint-config-next": "14.0.1",
-    "next": "14.0.1",
-    "postcss": "8.4.31",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.1.0",
+    "next": "14.1.0",
+    "postcss": "8.4.33",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.5",
-    "typescript": "5.2.2",
-    "zustand": "4.4.5"
+    "tailwindcss": "3.4.1",
+    "typescript": "5.3.3",
+    "zustand": "4.5.0"
   },
   "devDependencies": {
     "@mdx-js/loader": "3.0.0",
     "@mdx-js/react": "3.0.0",
-    "@next/mdx": "14.0.1",
+    "@next/mdx": "14.1.0",
     "@tailwindcss/typography": "0.5.10",
-    "@types/mdx": "2.0.9",
+    "@types/mdx": "2.0.10",
     "webpack": "5.89.0"
   }
 }

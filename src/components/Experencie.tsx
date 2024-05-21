@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import LogoKachi from '@/icons/imgs/logo_kachimushi.png'
+import LogoGS from '@/icons/svg/LogoGS.svg'
 
 type Props = {
   dict: any
@@ -20,7 +22,7 @@ export default function Experencie({ dict }: Props) {
             {dict.about.expworkt1}
           </p>
           <picture className='flex justify-center'>
-            <Image src="/imgs/logo_kachimushi.png" width={200} height={200} alt="kachimushi" className='p-2 rounded-lg bg-white' />
+            <Image src={LogoKachi} width={200} height={200} alt="kachimushi" className='p-2 rounded-lg bg-white' />
           </picture>
           <ul className="grid gap-4 text-sm leading-5 bg-slate-800 [&>*:nth-child(even)]:text-emerald-400">
             <li>
@@ -48,7 +50,7 @@ export default function Experencie({ dict }: Props) {
           {dict.about.expworkt2}
           </p>
           <picture className='flex justify-center'>
-            <Image src="/imgs/LogoGS.svg" alt="GupoSalinas" className='p-2 rounded-lg bg-white' width={166} height={166} />
+            <Image src={LogoGS} alt="GupoSalinas" className='p-2 rounded-lg bg-white' width={166} height={166} />
           </picture>
           <ul className="grid gap-4 text-sm leading-5 bg-slate-800 [&>*:nth-child(even)]:text-emerald-400">
             <li>
